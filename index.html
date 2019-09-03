@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+
+
+
+    <script src="js/jquery-2.2.0.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/logIn.js"></script>
+    <title>Project2</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+       
+        <!-- 1ra fila -->
+    <header class="row">
+
+        <!--  caja logo -->
+        <div id="logo" class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <img src="img/logo.png" class="img-responsive" alt="logo">
+        </div>
+
+        <!-- nav bar Movil -->
+         <!-- <div id="btn-buttonMovil" class="navbar-header navbar-inverse">
+
+            <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#btn-button">
+                opciones  
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>  -->
+
+    
+        <!-- caja boton nav-bar pull-right en la clase llevara el nav hacia la derecha-->
+            <nav id="btn-button" class="col-lg-9 col-md-9 col-sm-12 col-xs-12  pull-right" >
+             <ul class="nav navbar-nav">
+
+                 <!-- <li><a href="#">Home</a> </li>  -->
+                   <li> <a href="#" class="btn btn-info btn-lg">
+                         <span class="glyphicon glyphicon-home"></span> Home
+                     </a> </li>
+
+                     <!-- <li><a href="#">Sign In</a></li> -->
+                     <li><a href="#" class="btn btn-info btn-lg">
+                         <span class="glyphicon glyphicon-user"></span> Register
+                        </a></li>
+                       
+                        <!-- <li><a href="#">Sign Up</a></li> -->
+                         <li><a href="#" class="btn btn-info btn-lg" id="myBtn">
+                            <span class="glyphicon glyphicon-user"></span> Log in 
+                        </a></li> 
+                        <!-- pop ups Form  -->
+                         <div class="modal fade" id="myModal" role="dialog"> 
+                                <div class="modal-dialog">
+                                
+                                  <div class="modal-content">
+                                    <div class="modal-header" style="padding:35px 50px;">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4><span class="glyphicon glyphicon-lock"></span> Welcome</h4>
+                                    </div>
+                                    <div class="modal-body" style="padding:40px 50px;">
+                                      <form role="form">
+                                        <div class="form-group">
+                                          <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+                                          <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+                                          <input type="text" class="form-control" id="psw" placeholder="Enter password">
+                                        </div>
+                                        <div class="checkbox">
+                                          <label><input type="checkbox" value="" checked>Remember me</label>
+                                        </div>
+                                          <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+                                      </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                                      <p>Not a member? <a href="#">Sign Up</a></p>
+                                      <p>Forgot <a href="#">Password?</a></p>
+                                    </div>
+                                  </div>
+                                  
+                                </div>
+                              </div>  
+                            
+                            
+                            
+     <!--- pop ups Form -------------------------------------------------------------------------------------------- -->
+     <!-- <li><a href="#">Nosotros</a></li> -->
+
+     <!-- <li><a href="#">Servicios</a></li> -->
+     <li><a href="#" class="btn btn-info btn-lg">
+             <span class="glyphicon glyphicon-info-sign"></span> Info
+         </a></li>
+     </ul>
+
+
+                <!-- <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a> </li> 
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    
+                
+                </ul> -->
+    
+            </nav>
+            
+                    <!-- para que me aparezca solo los botones moviles -->
+                    <!-- <div id="botomMovil" class="col-xs-2" style="background:goldenrod; height:50px">Movil</div> -->
+                </header>
+
+                
+            
+
+<!-- Fila slide Carousel-->
+<div  id="myCarousel" class="row carousel slide"  data-ride="carousel">
+
+    
+        <!-- seran los botenes de las imagenes que contiene el slide -->
+        <ul class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"> </li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+        </ul>
+        
+        
+        <!-- este div encerrara cada uno de las imagenes -->
+            <div class="carousel-inner">
+    
+            <!-- item seran las imagenes a poner, active en la clase pq sera la primera-->
+                 <div class="item active"> 
+                     <img class="img-responsive" src="img/poster1.jpg"> 
+                </div>
+    
+                <div class="item"> 
+                      <img class="img-responsive" src="img/poster2.jpg"> 
+                </div>
+    
+                 <div class="item"> 
+                    <img class="img-responsive" src="img/poster3.jpg"> 
+                </div>
+
+                <div class="item"> 
+                        <img class="img-responsive" src="img/poster4.jpg"> 
+                    </div>
+
+                    
+                <div class="item"> 
+                        <img class="img-responsive" src="img/poster5.jpg"> 
+                    </div>
+
+                        
+                <div class="item"> 
+                        <img class="img-responsive" src="img/poster6.jpg"> 
+                    </div>
+                
+            </div>
+            
+    </div>
+<!-- Fila Top -->
+<div class="row" id="top">
+    
+    <div  class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+     <!-- 100% para que no salga de mi caja -->
+     <a href="#photo1" data-toggle="modal"> <img src="img/landscape.jpg" alt="landscape" width="100%" class="img-rounded"> </a>
+        <ul>
+            <li>Title:</li>
+            <li>Genre:</li>
+            <li>Duration:</li>
+        </ul>
+    
+    </div>
+    <!-----------------------------------------------------------------------------------------------------------  -->
+    <!-- modal pic para que se muestre la foto con ese ID mas grande en la misma pagina OPCIONAL -->
+    <div id="photo1" class="modal fade">
+
+        <div class="modal-dialog modal-content modal-body">
+            <!-- button for closing X modal window -->
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <img src="img/landscape.jpg" alt="" width="100%">
+        </div>
+    </div>
+
+          <!-- modal Opcional -->
+     <div id="photo2" class="modal fade">
+         <div class="modal-dialog modal-content modal-body">
+                
+                         <!-- button to close modal window -->
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <img src="img/landscape.jpg" alt="" width="100%">
+        </div>
+    </div>
+
+<!-- -----------------------------modal----------------------------------------------------------------- -->
+
+<!-- 100% para que no salga de mi caja -->
+
+    <div  class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+           <a href="#photo2" data-toggle="modal"> <img src="img/landscape.jpg" alt="landscape" width="100%" class="img-rounded"></a>
+            <ul>
+                <li>Title:</li>
+                <li>Genre:</li>
+                <li>Duration:</li>
+            </ul>
+        </div>
+
+      
+
+<!-- 100% para que no salga de mi caja -->
+    <div  class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <img src="img/landscape.jpg" alt="landscape" width="100%" class="img-rounded">
+            <ul>
+                <li>Title:</li>
+                <li>Genre:</li>
+                <li>Duration:</li>
+            </ul>
+        </div>
+
+<!-- 100% para que no salga de mi caja -->
+    <div  class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <img src="img/landscape.jpg" alt="landscape" width="100%" class="img-rounded">
+            <ul>
+                <li>Title:</li>
+                <li>Genre:</li>
+                <li>Duration:</li>
+            </ul>
+    </div>
+</div>
+
+
+<!-- Fila Section -->
+<section class="row" id="center">
+
+    <!-- aside = columns -->
+    <div  class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+            <!-- 100% para que no salga de mi caja -->
+               <img src="img/landscape.jpg" alt="landscape" width="100%" class="img-rounded">
+               <ul>
+                   <li>Title:</li>
+                   <li>Genre:</li>
+                   <li>Duration:</li>
+               </ul>
+           </div>
+       
+       <!-- 100% para que no salga de mi caja -->
+           <div  class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                   <img src="img/landscape.jpg" alt="landscape" width="100%" class="img-rounded">
+                   <ul>
+                       <li>Title:</li>
+                       <li>Genre:</li>
+                       <li>Duration:</li>
+                   </ul>
+               </div>
+       
+       
+       <!-- 100% para que no salga de mi caja -->
+           <div  class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                   <img src="img/landscape.jpg" alt="landscape" width="100%" class="img-rounded">
+                   <ul>
+                       <li>Title:</li>
+                       <li>Genre:</li>
+                       <li>Duration:</li>
+                   </ul>
+               </div>
+       
+       <!-- 100% para que no salga de mi caja -->
+           <div  class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                   <img src="img/landscape.jpg" alt="landscape" width="100%" class="img-rounded">
+                   <ul>
+                       <li>Title:</li>
+                       <li>Genre:</li>
+                       <li>Duration:</li>
+                   </ul>
+           </div>
+       
+       
+       </div>
+       
+</section>
+
+
+<!-- Fila Bottom -->
+<div class="row" id="bottom">
+
+        <div  class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+                <video controls poster="img/landscape.jpg" width="100%">
+                <source src="" type="video/mp4">
+                <source src="" type="video/ogg">
+                <source src="" type="video/webm">
+                
+                </video>
+               </div>
+           
+           <!-- 100% para que no salga de mi caja -->
+               <div  class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                       
+                <video controls poster="img/landscape.jpg" width="100%">
+                    <source src="" type="video/mp4">
+                    <source src="" type="video/ogg">
+                    <source src="" type="video/webm">
+                </video>
+                    
+                   </div>
+           
+           
+           <!-- 100% para que no salga de mi caja -->
+               <div  class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                   
+                    <video controls poster="img/landscape.jpg" width="100%">
+                        <source src="" type="video/mp4">
+                        <source src="" type="video/ogg">
+                        <source src="" type="video/webm">
+                    </video>
+                        
+                   </div>
+           
+           <!-- 100% para que no salga de mi caja -->
+               <div  class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                      
+                    <video controls poster="img/landscape.jpg" width="100%">
+                        <source src="" type="video/mp4">
+                        <source src="" type="video/ogg">
+                        <source src="" type="video/webm">
+                    </video>
+
+               </div>
+           
+           
+           </div>
+        <!-- <div  class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="background:darkred; height:180px">Bottom 1</div>
+        <div  class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="background:deepskyblue; height:180px">Bottom 2</div>
+        <div  class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="background:dodgerblue; height:180px">Bottom 3</div>
+        <div  class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="background:gold; height:180px">Bottom 4</div>
+    </div> -->
+    
+    <!-- Fila Footer -->
+
+    <footer class="row" id="footer">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                
+                
+            <ul>
+                <li><span class="glyphicon glyphicon-phone"></span>   (786)-555-555</li>
+                <li><span class="glyphicon glyphicon-map-marker"></span>  Street....</li>
+                <li><a href="flextino@gmail.com"><span class="glyphicon glyphicon-envelope"></span>  flextino@gmail.com</a></li>
+            </ul>
+        </div>
+      
+        
+        <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12" >
+            <ol>
+                <li>
+                    <a href="http://www.facebook.com" target="_blank"> 
+                    <i class="fa fa-facebook" style="font-size: 24px"></i>
+                </a></li>
+                    
+                <li><a href="http://www.instagram.com" target="_blank"> 
+                    <i class="fa fa-instagram" style="font-size: 24px"></i>
+                </a></li>
+               
+                <li>
+                <a href="http://www.twitter.com" target="_blank"> 
+                            <i class="fa fa-twitter" style="font-size: 24px"></i></a></li>
+                </li>
+            </ol>
+        </div>
+    </footer>
+
+      
+    
+    
+    
+    
+    
+    
+    
+</div>
+</body>
+</html>
